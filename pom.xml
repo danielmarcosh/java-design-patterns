@@ -36,7 +36,6 @@
   <inceptionYear>2014-2021</inceptionYear>
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <sonar-maven-plugin.version>3.8.0.2131</sonar-maven-plugin.version>
     <hibernate.version>5.2.18.Final</hibernate.version>
     <spring.version>5.0.17.RELEASE</spring.version>
     <spring-boot.version>2.0.9.RELEASE</spring-boot.version>
@@ -76,12 +75,6 @@
     <urm-maven-plugin.version>1.4.8</urm-maven-plugin.version>
     <commons-io.version>2.7</commons-io.version>
     <istack-commons-runtime.version>4.0.1</istack-commons-runtime.version>
-    <!-- SonarCloud -->
-    <sonar.host.url>https://sonarcloud.io</sonar.host.url>
-    <sonar.organization>iluwatar</sonar.organization>
-    <sonar.projectKey>iluwatar_java-design-patterns</sonar.projectKey>
-    <sonar.moduleKey>${project.artifactId}</sonar.moduleKey>
-    <sonar.projectName>Java Design Patterns</sonar.projectName>
   </properties>
   <modules>
     <module>abstract-factory</module>
@@ -454,11 +447,6 @@
               </configuration>
             </execution>
           </executions>
-        </plugin>
-        <plugin>
-          <groupId>org.sonarsource.scanner.maven</groupId>
-          <artifactId>sonar-maven-plugin</artifactId>
-          <version>${sonar-maven-plugin.version}</version>
         </plugin>
       </plugins>
     </pluginManagement>
